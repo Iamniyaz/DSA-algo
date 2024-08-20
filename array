@@ -143,3 +143,34 @@ public class OneAway {
 
     }
 }
+              *****************
+
+1.6 
+public class compressionstr {
+    public static void main(String[] args) {
+        int count=1;
+        String s="aabcccccaaa";
+        
+        for(int i =1;i<s.length();i++){
+             if(s.charAt(i)!=s.charAt(i-1)){
+                System.out.print(s.charAt(i-1));
+                System.out.print(count);
+                count=1;
+            } else count++;
+
+            if((i+1)>=s.length()){
+                if(s.charAt(i)!=s.charAt(i-1)){
+                    System.out.print(s.charAt(i));
+                    System.out.print("1");
+                }
+                else {
+                System.out.print(s.charAt(i));
+                System.out.print(count);}
+            }
+            
+            
+        }
+        
+
+    }
+}
